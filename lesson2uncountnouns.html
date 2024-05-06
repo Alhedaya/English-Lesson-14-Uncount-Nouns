@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 14 - Uncount Noun </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); 
+height: 450vh; }
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  margin-top:10px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:225px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+.buttons1{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:23px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:175px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons1:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons1:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: center;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+
+
+
+.p{ font-size: 40px; cursor:pointer;}
+.p1 { font-size: 30px; cursor:pointer;}
+
+.div1 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ;}
+.div2 {display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px;}
+.div3 {display: grid; grid-template-columns: 1fr 1fr 1fr ; margin-bottom: 30px;}
+.div4  {display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px;}
+.div5 {display: grid; grid-template-columns: 1fr 1fr 1fr ;}
+.div6 {display: grid; grid-template-columns: 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.img {width:300px; height: 270px;}
+.img2 {width:300px; height: 270px; }
+
+@media screen and (max-width: 1000px){
+.p{ font-size: 25px;}
+.p1 {font-size: 25px;}
+
+.div1 {display: grid; grid-template-columns: 1fr;}
+.div2 {display: grid; grid-template-columns: 1fr;}
+.div3 {display: grid; grid-template-columns: 1fr;}
+.div4 {display: grid; grid-template-columns: 1fr;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.img{width:150px; height: 135px;}
+.img2 {width:150px; height: 135px; }
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:40px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:250px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+}
+}
+</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+<h1 class="tooltips">  Uncount nouns <span class="tooltipstext"> An uncount noun has no plural form. We can only talk about quantity, not number. For example, we can say some milk, some more milk, a lot of milk, a glass of milk, a litre of milk etc, and all of these have a singular noun. We do not say milks.</span> </h1> 
+
+<p class="p" style="text-align: center; ">Common uncount nouns</p>
+
+<div class="div1" style=" ">
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px; ">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound1.play()" class="buttons"> advice </button>
+<button onmousedown="sound2.play()" class="buttons"> furniture </button>
+<button onmousedown="sound3.play()" class="buttons"> machinery </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound4.play()" class="buttons"> accommodation </button>
+<button onmousedown="sound5.play()" class="buttons"> homework </button>
+<button onmousedown="sound6.play()" class="buttons"> money </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound7.play()" class="buttons"> baggage </button>
+<button onmousedown="sound8.play()" class="buttons"> knowledge </button>
+<button onmousedown="sound9.play()" class="buttons"> news </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound10.play()" class="buttons"> equipment </button>
+<button onmousedown="sound11.play()" class="buttons"> luggage </button>
+<button onmousedown="sound12.play()" class="buttons"> traffic </button>
+</div>
+
+</div>
+
+
+<div class="div2" style=" ">
+
+
+<div class="p1" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div class="p1" style="text-align: left; "></p><br>
+Some common nouns in English like information are uncount nouns even though they have plurals in other languages:<br><br>
+
+&bull; Let me give you some advice.<br>
+&bull; How much luggage have you got?<br><br>
+
+
+If we want to make these things countable, we use expressions like:<br><br>
+<div class="div3" style=" ">
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding-top:30px; ">
+<button onmousedown="sound13.play()" class="buttons"> a piece of ... </button>
+<button onmousedown="sound14.play()" class="buttons"> pieces of ...  </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound15.play()" class="buttons"> 	a bit of ... </button>
+<button onmousedown="sound16.play()" class="buttons"> bits of ... </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound17.play()" class="buttons"> an item of ... </button>
+<button onmousedown="sound18.play()" class="buttons"> items of ... </button>
+</div>
+
+</div>
+
+
+&bull; Let me give you<b> a piece of</b> advice.<br>
+&bull; That's <b>a</b> useful <b>piece of</b> equipment.<br>
+&bull; We bought <b>a few bits</b> of furniture for the new apartment.<br>
+&bull; She had six separate <b>items of</b> luggage.<br><br>
+
+However, accommodation, money and traffic cannot be made countable in this way. We need to use other expressions:<br><br>
+
+&bull; I've lived in three apartments. &#10004;<br>
+ bits of accommodation &#10006;<br><br>
+
+&bull; Smith received three large sums of money. &#10004;<br>
+ pieces of money &#10006; <br><br>
+
+&bull; We got stuck in two traffic jams. &#10004;<br> pieces of traffic &#10006; <br><br>
+
+</div>
+</div>
+
+
+<div class="div2" style=" ">
+
+
+<div class="p1" style="text-align: left;  background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+Some nouns in English are uncount nouns. We do not use uncount nouns in the plural and we do not use them with the indefinite article a &bull; an:<br><br>
+
+&bull; We ate a lot of food. &#10004;<br>
+ foods &#10006;<br><br>
+
+&bull; We bought some new furniture. &#10004;<br>
+ furnitures &#10006;<br><br>
+
+&bull; That's useful information. &#10004;<br>
+ a useful information &#10006;<br><br>
+
+We can use some quantifiers with uncount nouns: <br><br>
+
+
+&bull; He gave me <b>some</b> useful advice.
+&bull; They gave us <b>a lot of</b> information.<br><br>
+
+Uncount nouns often refer to:<br><br>
+
+&bull; <b>Substances</b>: food, water, wine, salt, bread, iron<br>
+&bull; <b>Human feelings or qualities</b>: anger, cruelty, happiness, honesty, pride<br>
+&bull; <b>Activities</b>: help, sleep, travel, work<br>
+&bull;<b> Abstract ideas</b>: beauty, death, fun, life
+
+</p>
+</div>
+
+</div>
+
+
+</div>
+
+<script>
+
+  var sound1 = new Audio();
+  sound1.src = "advice.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "furniture.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "machinery.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "accommodation.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = "homework.mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "money.mp3";
+
+  var sound7 = new Audio();
+  sound7.src = "baggage.mp3";
+
+  var sound8 = new Audio();
+  sound8.src = "knowledge.mp3";
+
+  var sound9 = new Audio();
+  sound9.src = "news.mp3";
+
+  var sound10 = new Audio();
+  sound10.src = "equipment.mp3";
+
+  var sound11 = new Audio();
+  sound11.src = "luggage.mp3";
+
+  var sound12 = new Audio();
+  sound12.src = "traffic.mp3";
+ 
+  var sound13 = new Audio();
+  sound13.src = "apieceof.mp3";
+
+  var sound14 = new Audio();
+  sound14.src = "piecesof.mp3";
+
+  var sound15 = new Audio();
+  sound15.src = "abitof.mp3";
+
+  var sound16 = new Audio();
+  sound16.src = "bitsof.mp3";
+
+  var sound17 = new Audio();
+  sound17.src = "anitemof.mp3";
+
+  var sound18 = new Audio();
+  sound18.src = "itemsof.mp3";
+
+ 
+  var sound19 = new Audio();
+  sound19.src = "both.mp3";
+
+  var sound20 = new Audio();
+  sound20.src = "either.mp3";
+
+  var sound21 = new Audio();
+  sound21.src = "neither.mp3";
+
+  var sound22 = new Audio();
+  sound22.src = "afew.mp3";
+
+  var sound23 = new Audio();
+  sound23.src = "fewer.mp3";
+
+  var sound24 = new Audio();
+  sound24.src = "acoupleof.mp3";
+
+  var sound25 = new Audio();
+  sound25.src = "hundredsof.mp3";
+
+  var sound26 = new Audio();
+  sound26.src = "thousandsof.mp3";
+
+  var sound27 = new Audio();
+  sound27.src = "notmuch.mp3";
+
+  var sound28 = new Audio();
+  sound28.src = "abitof.mp3";
+
+  var sound29 = new Audio();
+  sound29.src = "alittle.mp3";
+
+  var sound30 = new Audio();
+  sound30.src = "agreatdealof.mp3";
+
+  var sound31 = new Audio();
+  sound31.src = "agooddealof.mp3";
+ 
+
+  
+
+
+</script>
+</body>
+</html>
